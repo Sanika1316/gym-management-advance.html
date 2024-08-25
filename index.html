@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gym Management System</h1>
+    </header>
+    <main>
+        <section id="login-section">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button id="login-btn">Login</button>
+            </form>
+            <p id="login-error"></p>
+        </section>
+        <section id="dashboard-section" hidden>
+            <h2>Dashboard</h2>
+            <button id="view-receipts-btn">View Receipts</button>
+            <button id="make-payment-btn">Make Payment</button>
+            <button id="view-schedule-btn">View Schedule</button>
+            <button id="supplement-store-btn">Supplement Store</button>
+            <button id="nutrition-advice-btn">Nutrition Advice</button>
+            <button id="personal-training-btn">Personal Training</button>
+        </section>
+        <section id="receipts-section" hidden>
+            <h2>Receipts</h2>
+            <ul id="receipts-list"></ul>
+        </section>
+        <section id="payment-section" hidden>
+            <h2>Make Payment</h2>
+            <form id="payment-form">
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+                <button id="make-payment-submit-btn">Make Payment</button>
+            </form>
+        </section>
+        <section id="schedule-section" hidden>
+            <h2>Schedule</h2>
+            <ul id="schedule-list"></ul>
+        </section>
+        <section id="supplement-store-section" hidden>
+            <h2>Supplement Store</h2>
+            <ul id="supplement-list"></ul>
+        </section>
+        <section id="nutrition-advice-section" hidden>
+            <h2>Nutrition Advice</h2>
+            <ul id="nutrition-list"></ul>
+        </section>
+        <section id="personal-training-section" hidden>
+            <h2>Personal Training</h2>
+            <ul id="personal-training-list"></ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
